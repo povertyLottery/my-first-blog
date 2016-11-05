@@ -25,7 +25,10 @@ SECRET_KEY = 'g27yi1^1&kpb@ysp-i$kua#5&fj7w*_19d(3(9q_*aq@ys-ys%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'povertylottery.pythonanywhere.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
