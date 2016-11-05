@@ -9,10 +9,13 @@
     		<h1>A Place that is for Practicing</h1>
     	</div>
 
-    	<div>
-    		<h2>The first one</h2>
-    		<p>Boy I never have much to say when it's time to say things</p>
-    	</div>
-    	
+    	{% for post in posts %}
+    		<div>
+    			<p>published: {{ post.published_date}}</p>
+    			<h1>{{ post.title }}</h1>
+    			<p>{{ post.text|linebreaksbr}}</p>
+    		</div>
+		{% endfor %}
+
     </body>
 </html>
